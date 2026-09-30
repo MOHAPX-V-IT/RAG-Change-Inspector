@@ -1,0 +1,22 @@
+{
+  "questions": [
+    {
+      "id": "booking-policy",
+      "relevant_sources": [
+        "policy"
+      ],
+      "results": [
+        {
+          "source_id": "policy",
+          "chunk_id": "policy-1",
+          "text": "Synthetic document fragment."
+        },
+        {
+          "source_id": "other",
+          "chunk_id": "other-1",
+          "text": "Synthetic document fragment."
+        }
+      ]
+    }
+  ]
+}

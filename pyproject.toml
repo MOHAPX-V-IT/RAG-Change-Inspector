@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rag-change-inspector"
+version = "0.2.0"
+description = "Compare retrieval snapshots and explain where rankings changed."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{name = "Aleksei Maryshev"}]
+keywords = ["ai", "agents", "testing", "developer-tools"]
+classifiers = ["Development Status :: 3 - Alpha", "Programming Language :: Python :: 3", "Operating System :: OS Independent"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "build>=1,<2"]
+
+[project.scripts]
+rag-change-inspector = "rag_change_inspector.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["rag_change_inspector*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

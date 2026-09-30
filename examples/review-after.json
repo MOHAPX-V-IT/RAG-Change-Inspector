@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "questions": [
+    {
+      "id": "cancellation",
+      "text": "How do I cancel a booking?",
+      "relevant_sources": [
+        "policy"
+      ],
+      "results": [
+        {
+          "source_id": "rooms",
+          "chunk_id": "rooms-1",
+          "text": "Room A is on the second floor. Equipment includes a screen and whiteboard."
+        },
+        {
+          "source_id": "policy",
+          "chunk_id": "policy-1",
+          "text": "Cancel a booking before its start time. Late cancellations require approval."
+        }
+      ]
+    },
+    {
+      "id": "availability",
+      "text": "Which rooms are available?",
+      "relevant_sources": [
+        "availability"
+      ],
+      "results": [
+        {
+          "source_id": "availability",
+          "chunk_id": "availability-1",
+          "text": "Room A: available after 14:00. Room B: available all day."
+        },
+        {
+          "source_id": "rooms",
+          "chunk_id": "rooms-1",
+          "text": "Room A is on the second floor. Equipment includes a screen and whiteboard."
+        }
+      ]
+    },
+    {
+      "id": "capacity",
+      "text": "How many people fit in room A?",
+      "relevant_sources": [
+        "capacity"
+      ],
+      "results": [
+        {
+          "source_id": "capacity",
+          "chunk_id": "capacity-1",
+          "text": "Room A accommodates up to eight people."
+        },
+        {
+          "source_id": "rooms",
+          "chunk_id": "rooms-1",
+          "text": "Room A is on the second floor. Equipment includes a screen and whiteboard."
+        }
+      ]
+    }
+  ]
+}
